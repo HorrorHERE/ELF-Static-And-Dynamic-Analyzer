@@ -1,0 +1,128 @@
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+   524288    64 8192 allocating memory for b-tree...
+    65536     8 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+   851968            total memory allocated
+
+Loading processor module /home/kali/ida-pro-9.3/procs/pc.so for metapc...OK
+Loading type libraries...
+Autoanalysis subsystem has been initialized.
+Database for file 'aa-enabled' has been loaded.
+Hex-Rays Decompiler plugin has been loaded (v9.3.0.260327)
+  The hotkeys are F5: decompile, Ctrl-F5: decompile all.
+
+  Please check the Edit/Plugins menu for more information.
+Hex-rays version 9.3.0.260327 has been detected, gooMBA plugin ready to use
+Using type parser: legacy
+extract_cfg.py: '>' not supported between instances of 'builtin_function_or_method' and 'int'
+Traceback (most recent call last):
+  File "/home/kali/ida-pro-9.3/python/ida_idaapi.py", line 505, in IDAPython_ExecScript
+    exec(code, g)
+    ~~~~^^^^^^^^^
+  File "extract_cfg.py", line 61, in <module>
+    main()
+    ~~~~^^
+  File "extract_cfg.py", line 16, in main
+    out_dir = idc.ARGV[1] if idc.ARGV.count > 1 else "."
+                             ^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'builtin_function_or_method' and 'int'
+ -> OK
+Unloading IDP module /home/kali/ida-pro-9.3/procs/pc.so...
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+   524288    64 8192 allocating memory for b-tree...
+    65536     8 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+   851968            total memory allocated
+
+Loading processor module /home/kali/ida-pro-9.3/procs/pc.so for metapc...OK
+Loading type libraries...
+Autoanalysis subsystem has been initialized.
+Database for file 'aa-enabled' has been loaded.
+Hex-Rays Decompiler plugin has been loaded (v9.3.0.260327)
+  The hotkeys are F5: decompile, Ctrl-F5: decompile all.
+
+  Please check the Edit/Plugins menu for more information.
+Hex-rays version 9.3.0.260327 has been detected, gooMBA plugin ready to use
+Using type parser: legacy
+
+==================================================
+[DEBUG] Скрипт extract_cfg.py запущен!
+[DEBUG] Обрабатываемый файл: /home/kali/elf_dataset_1000/aa-enabled
+==================================================
+[DEBUG] Ожидание завершения автоматического анализа...
+[DEBUG] Анализ завершен. Начинаем построение CFG...
+[ОШИБКА] Исключение в скрипте: module 'ida_funcs' has no attribute 'Functions'
+Traceback (most recent call last):
+  File "extract_cfg.py", line 39, in main
+    for func_ea in ida_funcs.Functions():
+                   ^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'ida_funcs' has no attribute 'Functions'
+[DEBUG] Корректное завершение работы IDA.
+Unloading IDP module /home/kali/ida-pro-9.3/procs/pc.so...
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+   524288    64 8192 allocating memory for b-tree...
+    65536     8 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+   851968            total memory allocated
+
+Loading processor module /home/kali/ida-pro-9.3/procs/pc.so for metapc...OK
+Loading type libraries...
+Autoanalysis subsystem has been initialized.
+Database for file 'aa-enabled' has been loaded.
+Hex-Rays Decompiler plugin has been loaded (v9.3.0.260327)
+  The hotkeys are F5: decompile, Ctrl-F5: decompile all.
+
+  Please check the Edit/Plugins menu for more information.
+Hex-rays version 9.3.0.260327 has been detected, gooMBA plugin ready to use
+Using type parser: legacy
+
+==================================================
+[DEBUG] Скрипт extract_cfg.py запущен!
+[DEBUG] Обрабатываемый файл: /home/kali/elf_dataset_1000/aa-enabled
+==================================================
+[DEBUG] Ожидание завершения автоматического анализа...
+[DEBUG] Анализ завершен. Начинаем построение CFG...
+[ОШИБКА] Исключение в скрипте: 'qbasic_block_t' object has no attribute 'succs'
+Traceback (most recent call last):
+  File "extract_cfg.py", line 57, in main
+    for succ in block.succs():
+                ^^^^^^^^^^^
+AttributeError: 'qbasic_block_t' object has no attribute 'succs'
+[DEBUG] Корректное завершение работы IDA.
+Unloading IDP module /home/kali/ida-pro-9.3/procs/pc.so...
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+   524288    64 8192 allocating memory for b-tree...
+    65536     8 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+   851968            total memory allocated
+
+Loading processor module /home/kali/ida-pro-9.3/procs/pc.so for metapc...OK
+Loading type libraries...
+Autoanalysis subsystem has been initialized.
+Database for file 'aa-enabled' has been loaded.
+Hex-Rays Decompiler plugin has been loaded (v9.3.0.260327)
+  The hotkeys are F5: decompile, Ctrl-F5: decompile all.
+
+  Please check the Edit/Plugins menu for more information.
+Hex-rays version 9.3.0.260327 has been detected, gooMBA plugin ready to use
+Using type parser: legacy
+
+==================================================
+[DEBUG] Скрипт extract_cfg.py запущен!
+[DEBUG] Обрабатываемый файл: /home/kali/elf_dataset_1000/aa-enabled
+==================================================
+[DEBUG] Ожидание завершения автоматического анализа...
+[DEBUG] Анализ завершен. Начинаем построение CFG...
+[УСПЕХ] CFG успешно сохранен (78 функций):
+        /tmp/aa-enabled.cfg.dot
+[DEBUG] Корректное завершение работы IDA.
+Unloading IDP module /home/kali/ida-pro-9.3/procs/pc.so...

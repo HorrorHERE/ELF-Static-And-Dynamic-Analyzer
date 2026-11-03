@@ -1,0 +1,7 @@
+cfg_ghidra/
+cfg_idapro/
+cfg_png_ghidra/
+cfg_tool/
+validation_full_traces/
+validation_traces/
+Dataset/elf_dataset_1000/
